@@ -21,14 +21,26 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
+        
         <Label Grid.Column="1" Content="Formations" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <ComboBox Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120"/>
-        
-        
+        <ComboBox Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" IsReadOnly="True">
+            <ComboBoxItem Cursor="Hand" Content="4-4-2" IsSelected="True"/>
+            <ComboBoxItem Cursor="Hand" Content="4-3-3"/>
+            <ComboBoxItem Cursor="Hand" Content="4-5-1"/>
+        </ComboBox>
+
+        <Button x:Name="btnAddPlayer" Content="Add Player -->" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" Height="25" Margin="0,0,0,50"/>
+        <Button x:Name="btnSubPlayer" Content="-- Remove Player" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" Height="25" Margin="0,50,0,0"/>
+
 
         <Label Grid.Column="1" Content="All Players" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1"/>
         <Label Grid.Column="4" Content="Selected Players" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1"/>
-        <ListBox x:Name="AllPlayersBox" Grid.Column="1" Grid.Row="2"/>
-        <ListBox x:Name="SelectedPlayersBox" Grid.Column="4" Grid.Row="2"/>
+        <ListBox x:Name="bxAllPlayers" Grid.Column="1" Grid.Row="2"/>
+        <ListBox x:Name="bxSelectedPlayers" Grid.Column="4" Grid.Row="2"/>
+
+        <Label Grid.Column="4" Content="Spaces Left" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Margin="0,0,40,0"/>
+        <TextBlock x:Name="txblkSpaces" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Margin="80,0,0,0" Width="30"></TextBlock>
+
+
     </Grid>
 </Window>

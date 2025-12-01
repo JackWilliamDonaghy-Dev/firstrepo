@@ -1,0 +1,21 @@
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\bin\Debug\net8.0-windows\Practice Exam.exe
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\bin\Debug\net8.0-windows\Practice Exam.deps.json
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\bin\Debug\net8.0-windows\Practice Exam.runtimeconfig.json
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\bin\Debug\net8.0-windows\Practice Exam.dll
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\bin\Debug\net8.0-windows\Practice Exam.pdb
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam_MarkupCompile.cache
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam_MarkupCompile.lref
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.g.resources
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.AssemblyInfoInputs.cache
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.AssemblyInfo.cs
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.csproj.CoreCompileInputs.cache
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.sourcelink.json
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.dll
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\refint\Practice Exam.dll
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.pdb
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\Practice Exam.genruntimeconfig.cache
+C:\Users\jacki\OneDrive - Atlantic TU\Documents\GitHub\firstrepo\OOP_PracticeExam_2019_2020\Practice Exam\obj\Debug\net8.0-windows\ref\Practice Exam.dll
