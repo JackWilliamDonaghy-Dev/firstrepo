@@ -35,7 +35,7 @@
 
         <Label Grid.Column="1" Content="All Players" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1"/>
         <Label Grid.Column="4" Content="Selected Players" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1"/>
-        <ListBox x:Name="bxAllPlayers" Grid.Column="1" Grid.Row="2"/>
+        <ListBox x:Name="bxAllPlayers" ItemsSource="{Binding AllPlayers}" Grid.Column="1" Grid.Row="2"/>
         <ListBox x:Name="bxSelectedPlayers" Grid.Column="4" Grid.Row="2"/>
 
         <Label Grid.Column="4" Content="Spaces Left" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Margin="0,0,40,0"/>

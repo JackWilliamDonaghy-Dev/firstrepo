@@ -109,6 +109,31 @@ namespace Practice_Exam
             Random random = new Random();
             return new DateTime(random.Next(1996, 2005), random.Next(1, 12), random.Next(1, 28));
         }
+
+        public override string ToString()
+        {
+            string userPosition = "";
+
+            switch (PreferredPosition)
+            {
+                case position.Goalkeeper:
+                    userPosition = "GOALKEEPER";
+                    break;
+                case position.Defender:
+                    userPosition = "DEFENDER";
+                    break;
+                case position.Midfielder:
+                    userPosition = "MIDFIELDER";
+                    break;
+                case position.Forward:
+                    userPosition = "FORWARD";
+                    break;
+                default:
+                    break;
+
+            }
+            return $"{FirstName} {SurName} ({Age}) {userPosition}";
+        }
     
     }
 }
