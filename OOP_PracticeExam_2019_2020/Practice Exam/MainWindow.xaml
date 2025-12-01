@@ -23,13 +23,13 @@
         </Grid.ColumnDefinitions>
         
         <Label Grid.Column="1" Content="Formations" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <ComboBox Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" IsReadOnly="True">
+        <ComboBox x:Name="cmbxFormations" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" IsReadOnly="True" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Cursor="Hand" Content="4-4-2" IsSelected="True"/>
             <ComboBoxItem Cursor="Hand" Content="4-3-3"/>
             <ComboBoxItem Cursor="Hand" Content="4-5-1"/>
         </ComboBox>
 
-        <Button x:Name="btnAddPlayer" Content="Add Player -->" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" Height="25" Margin="0,0,0,50"/>
+        <Button x:Name="btnAddPlayer" Content="Add Player -->" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" Height="25" Margin="0,0,0,50" Click="btnAddPlayer_Click"/>
         <Button x:Name="btnSubPlayer" Content="-- Remove Player" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="120" Height="25" Margin="0,50,0,0"/>
 
 

@@ -10,7 +10,6 @@ namespace Practice_Exam
     /// </summary>
     public partial class App : Application
     {
-        ObservableCollection<Player> Allplayers = Player.CreateTeam();
         ObservableCollection<Player> SelectedPlayers = new ObservableCollection<Player>();
 
         

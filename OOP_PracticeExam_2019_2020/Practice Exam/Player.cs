@@ -9,6 +9,7 @@ namespace Practice_Exam
 {
     internal class Player
     {
+
         public enum position { Goalkeeper, Defender, Midfielder, Forward }
 
         public string FirstName { get; set; }
