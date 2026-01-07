@@ -1,16 +1,7 @@
 ﻿using System.Collections.ObjectModel;
-using System.Diagnostics.Eventing.Reader;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Practice_Exam
 {
@@ -21,8 +12,8 @@ namespace Practice_Exam
 
     public partial class MainWindow : Window
     {
-            ObservableCollection<Player> AllPlayers = new ObservableCollection<Player>();
-            ObservableCollection<Player> SelectedPlayers = new ObservableCollection<Player>();
+        ObservableCollection<Player> AllPlayers = new ObservableCollection<Player>();
+        ObservableCollection<Player> SelectedPlayers = new ObservableCollection<Player>();
         public MainWindow()
         {
             InitializeComponent();
@@ -31,31 +22,51 @@ namespace Practice_Exam
             bxAllPlayers.ItemsSource = AllPlayers;
             bxAllPlayers.SelectedIndex = 0;
 
-
+            bxSelectedPlayers.ItemsSource = SelectedPlayers;
 
             DataContext = this;
         }
 
         private void btnAddPlayer_Click(object sender, RoutedEventArgs e)
         {
-
-
-            if () { }
-            else
+            if (bxAllPlayers.SelectedIndex < 0)
             {
-                SelectedPlayers.Add(AllPlayers[bxAllPlayers.SelectedIndex]);
-                AllPlayers.Remove(AllPlayers[bxAllPlayers.SelectedIndex]);
-
+                return;
             }
+
+            if (!CheckCapacity(bxAllPlayers.SelectedIndex))
+            {
+                MessageBox.Show("That position is already full for this formation.");
+                return;
+            }
+
+            SelectedPlayers.Add(AllPlayers[bxAllPlayers.SelectedIndex]);
+            AllPlayers.Remove(AllPlayers[bxAllPlayers.SelectedIndex]);
         }
 
         static int maxGoalies = 1, maxDefenders = 4, maxMidfielders = 4, maxForwards = 2;
-        private void CheckCapacity(int playerIndex)
+        private bool CheckCapacity(int playerIndex)
         {
             Player player = AllPlayers[playerIndex];
-            if () {
+            int goalies = SelectedPlayers.Count(selected => selected.PreferredPosition == Player.position.Goalkeeper);
+            int defenders = SelectedPlayers.Count(selected => selected.PreferredPosition == Player.position.Defender);
+            int midfielders = SelectedPlayers.Count(selected => selected.PreferredPosition == Player.position.Midfielder);
+            int forwards = SelectedPlayers.Count(selected => selected.PreferredPosition == Player.position.Forward);
+
+            switch (player.PreferredPosition)
+            {
+                case Player.position.Goalkeeper:
+                    return goalies < maxGoalies;
+                case Player.position.Defender:
+                    return defenders < maxDefenders;
+                case Player.position.Midfielder:
+                    return midfielders < maxMidfielders;
+                case Player.position.Forward:
+                    return forwards < maxForwards;
+                default:
+                    return false;
+            }
         }
-    }
 
         public void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
